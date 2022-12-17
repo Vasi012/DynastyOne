@@ -70,64 +70,65 @@
     </header>
 
     <main class="row">
-      <div class="border col-md-6 mt-5">
-        <div class="p-5">
-          <div class="row mb-3">
-            <label for="title" class="col-sm-2 col-form-label">Title</label>
-            <div class="col-sm-10">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Enter card Title"
-                id="title"
-              />
+        <div class="border col-md-6 mt-5">
+          <div class="p-5">
+            <div class="row mb-3">
+              <label for="title" class="col-sm-2 col-form-label">Title</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter card Title"
+                  id="title"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row mb-3">
-            <label for="destiny" class="col-sm-2 col-form-label">Destiny</label>
-            <div class="col-sm-10">
-              <input
-                type="text-area"
-                class="form-control"
-                placeholder="enter name of the loved one"
-                id="destiny"
-              />
+            <div class="row mb-3">
+              <label for="destiny" class="col-sm-2 col-form-label">Destiny</label>
+              <div class="col-sm-10">
+                <input
+                  type="text-area"
+                  class="form-control"
+                  placeholder="enter name of the loved one"
+                  id="destiny"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row mb-3">
-            <label for="content" class="col-sm-2 col-form-label">Content</label>
-            <div class="col-sm-10">
-              <input
-                type="text-area"
-                class="form-control"
-                placeholder="enter name of the loved one"
-                id="content"
-              />
+            <div class="row mb-3">
+              <label for="content" class="col-sm-2 col-form-label">Content</label>
+              <div class="col-sm-10">
+                <input
+                  type="text-area"
+                  class="form-control"
+                  placeholder="enter name of the loved one"
+                  id="content"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row mb-3">
-            <div class="form-group">
-              <select id="bgSelect" onchange="changeImage(this)">
-                <option value="op1">bg1</option>
-                <option value="op2">bg2</option>
-                <option value="op3">bg3</option>
-              </select>
+            <div class="row mb-3">
+              <div class="form-group">
+                <select id="bgSelect" onchange="changeImage(this)">
+                  <option selected>select a bg</option>
+                  <option value="op1">bg1</option>
+                  <option value="op2">bg2</option>
+                  <option value="op3">bg3</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div onclick="createCard()" class="btn btn-primary">Create Card</div>
-          <div onclick="cardResetq()" class="btn btn-secondary">Reset</div>
-        </div>
-      </div>
-      <div class="container border col-md-6 mt-5">
-        <div class="card text-center">
-          <div id="bg" class="bg-test card-body">
-            <h4 id="card-title">placeholder title</h4>
-            <p id="card-content">Place holder content</p>
-            <p id="card-sender">Place holder sender</p>
-            <img src="assets/images/op1.jpg" id="bg" />
+            <div onclick="createCard()" class="btn btn-primary">Create Card</div>
+            <div onclick="cardResetq()" class="btn btn-secondary">Reset</div>
           </div>
         </div>
-      </div>
+        <div class="container border col-md-6 mt-5">
+          <div class="card text-center">
+            <div id="bg" class="bg-test card-body">
+              <h4 id="card-title"></h4>
+              <p id="card-content"></p>
+              <p id="card-sender"></p>
+              <img  id="img-color" />
+            </div>
+          </div>
+        </div>
     </main>
     <footer>
       <!-- Footer contents -->

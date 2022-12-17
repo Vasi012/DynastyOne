@@ -2,11 +2,11 @@
 const cardTitle = document.getElementById("card-title");
 const cardContent = document.getElementById("card-content");
 const cardSender = document.getElementById("card-sender");
-const bgSelect = document.getElementById("bgSelect");
-const bg = document.getElementById('testing')
-// Function to change bg images
+const image = document.querySelector("#img-color")
+
+// Function to change bg image
 function changeImage(element) {
-  bg.src = "assets/images/" + element.value + ".jpg"
+  image.src = "assets/images/" + element.value + ".jpg"
 }
 const createCard = () => {
   let setTitle = document.getElementById("title").value;
